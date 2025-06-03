@@ -65,7 +65,7 @@ export const skills = {
     { name: "Spring Boot", icon: <FaLeaf /> },
     { name: "Docker", icon: <FaDocker /> },
     { name: "Scrum", icon: <FaUsers /> },
-    { name :"Java", icon: <SiJava />
+    { name :"Java", icon: <SiJava />},
     { name: "Python", icon: <SiPython />}
   ],
   frameworksAndLibraries: [
