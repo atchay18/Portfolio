@@ -1,5 +1,5 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaReact, FaNodeJs, FaDatabase, FaCode, FaHtml5, FaCss3Alt, FaWordpress, FaFigma } from 'react-icons/fa'; // Example icons
-import { SiExpress, SiMongodb, SiFirebase, SiTailwindcss, SiJava, SiTypescript, SiCplusplus, SiPython } from 'react-icons/si'; // More specific tech icons
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaHtml5, FaDocker, FaLeaf, FaDatabase, FaProjectDiagram, FaUsers } from 'react-icons/fa'; // Example icons
+import { SiMongodb, SiTailwindcss, SiJava, SiPython } from 'react-icons/si'; // More specific tech icons
 
 export const personalInfo = {
   name: "Atchayaa",
@@ -7,8 +7,8 @@ export const personalInfo = {
   email: "atchayaaa18@gmail.com",
   linkedin: "https://www.linkedin.com/in/atchayaa18/",
   github: "https://github.com/atchay18",
-  resumeLink: "/AditiAryaResume.pdf", // Make sure your resume is in public/
-  bio: "Innovative Full Stack Developer passionate about creating seamless and impactful web solutions. Eager to leverage modern technologies to solve real-world problems and contribute to dynamic team environments.",
+  resumeLink: "/AtchayaaResume.pdf", // Make sure your resume is in public/
+  bio: "I’m a software developer who loves building reliable and efficient apps, mostly using Java, Spring Boot, and Docker. I enjoy solving problems, writing clean code, and exploring new tech to make things better. Always up for a challenge and a good learning experience.",
   shortBio: "Just someone who loves to try, learn, and build." // For Hero section
 };
 
@@ -61,26 +61,21 @@ export const projects = [
 
 export const skills = {
   languages: [
-    { name: "C/C++", icon: <SiCplusplus /> },
-    { name: "Java", icon: <SiJava/> },
-    // { name: "TypeScript", icon: <SiTypescript /> }, // Add if you use it
     { name: "HTML5", icon: <FaHtml5 /> },
-    { name: "CSS3", icon: <FaCss3Alt /> },
-    { name: "SQL", icon: <FaDatabase /> },
+    { name: "Spring Boot", icon: <FaLeaf /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "Scrum", icon: <FaUsers /> },
+    { name :"Java", icon: <SiJava />
+    { name: "Python", icon: <SiPython />}
   ],
   frameworksAndLibraries: [
     { name: "React JS", icon: <FaReact /> },
-    { name: "Node JS", icon: <FaNodeJs /> },
-    { name: "Express JS", icon: <SiExpress /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss /> }, // You are using it!
-    { name: "Wordpress", icon: <FaWordpress /> },
   ],
   toolsAndPlatforms: [
     { name: "MongoDB", icon: <SiMongodb /> },
-    { name: "Firebase", icon: <SiFirebase /> },
     { name: "Git & GitHub", icon: <FaGithub /> },
     { name: "VS Code", icon: <FaCode /> }, // Or a more specific icon
-    { name: "Postman", icon: <FaCode /> }, // Placeholder icon
     { name: "Google Cloud Platform", icon: <FaCode /> }, // Placeholder icon
   ],
   coreCompetencies: [
