@@ -1,4 +1,2 @@
 [build]
-publish = "public"
-command = "npm install && npm run build"
-node_version = "idiomatic"
+idiomatic_version_file_enable_tools = true
