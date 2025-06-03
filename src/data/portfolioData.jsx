@@ -1,10 +1,15 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaHtml5, FaDocker, FaLeaf, FaDatabase, FaProjectDiagram, FaUsers } from 'react-icons/fa'; // Example icons
-import { SiMongodb, SiTailwindcss, SiJava, SiPython } from 'react-icons/si'; // More specific tech icons
+import { 
+  FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaHtml5, FaDocker, FaLeaf, FaDatabase, FaProjectDiagram, FaUsers, FaReact, FaCode 
+} from 'react-icons/fa'; 
+import { 
+  SiMongodb, SiTailwindcss, SiJava, SiPython, SiVisualstudiocode, SiGooglecloud 
+} from 'react-icons/si';
 
 export const personalInfo = {
   name: "Atchayaa",
   title: "Software Developer",
   email: "atchayaaa18@gmail.com",
+  phone: "+91-1234567890",  // Update with your real phone number if you want
   linkedin: "https://www.linkedin.com/in/atchayaa18/",
   github: "https://github.com/atchay18",
   resumeLink: "/AtchayaaResume.pdf", // Make sure your resume is in public/
@@ -16,7 +21,7 @@ export const education = [
   {
     institution: "Sri Sai Ram Institute of Technology",
     location: "Chennai, India",
-    logo: "https://upload.wikimedia.org/wikipedia/en/0/0c/Sri_Sai_Ram_Institute_of_Technology_logo.png", // Replace with actual logo URL
+    logo: "https://upload.wikimedia.org/wikipedia/en/0/0c/Sri_Sai_Ram_Institute_of_Technology_logo.png",
     degree: "Bachelor of Engineering in Electronics and Communication Engineering",
     duration: "AUG 2021 – MAY 2025",
     score: "CGPA: 8.34/10",
@@ -42,20 +47,20 @@ export const projects = [
     tech: ["Robotics","Embedded Systems", "Python", "OpenCV"],
     description: "Developed an AI-powered waste segregation robot that sorts waste into biodegradable and non-biodegradable categories using computer vision. Implemented real-time image processing with OpenCV and integrated a microcontroller for automation.",
     date: "MAR 2024 – MAY 2025",
-    githubLink: "https://github.com/https://github.com/atchay18/BioBin-Smart-Robotic-System-for-Biomedical-Waste-Management/AgriSure", // Replace with actual link
-    liveLink: null, // Replace with actual link if available
+    githubLink: "https://github.com/atchay18/BioBin-Smart-Robotic-System-for-Biomedical-Waste-Management",
+    liveLink: null,
     category: "Robotics",
-    icon: <FaReact size={24} className="text-accent-1"/>
+    icon: <FaReact size={24} className="text-accent-1" />
   },
   {
     title: "Campus Network",
     tech: ["Networking", "Routing", "Switching", "Cisco Packet Tracer", "IP Addressing"],
     description: "Designed and implemented a campus network project as part of Cisco’s virtual internship. Planned network topology, configured routers and switches, and ensured seamless connectivity. This hands-on experience strengthened my understanding of real-world networking concepts including IP addressing, routing, and network troubleshooting in an educational environment.",
     date: "MAY 2023 – JUNE 2024",
-    githubLink: "https://github.com/aditiarya37/BuildBridge", // Replace with actual link
+    githubLink: "https://github.com/aditiarya37/BuildBridge",
     liveLink: "https://build-bridge-seven.vercel.app/",
     category: "Full Stack",
-    icon: <FaReact size={24} className="text-accent-1"/>
+    icon: <FaReact size={24} className="text-accent-1" />
   },
 ];
 
@@ -65,18 +70,18 @@ export const skills = {
     { name: "Spring Boot", icon: <FaLeaf /> },
     { name: "Docker", icon: <FaDocker /> },
     { name: "Scrum", icon: <FaUsers /> },
-    { name :"Java", icon: <SiJava />},
-    { name: "Python", icon: <SiPython />}
+    { name :"Java", icon: <SiJava /> },
+    { name: "Python", icon: <SiPython /> }
   ],
   frameworksAndLibraries: [
     { name: "React JS", icon: <FaReact /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss /> }, // You are using it!
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
   ],
   toolsAndPlatforms: [
     { name: "MongoDB", icon: <SiMongodb /> },
     { name: "Git & GitHub", icon: <FaGithub /> },
-    { name: "VS Code", icon: <FaCode /> }, // Or a more specific icon
-    { name: "Google Cloud Platform", icon: <FaCode /> }, // Placeholder icon
+    { name: "VS Code", icon: <SiVisualstudiocode /> },
+    { name: "Google Cloud Platform", icon: <SiGooglecloud /> },
   ],
   coreCompetencies: [
     "Problem Solving",
@@ -99,7 +104,7 @@ export const leadershipAndInvolvement = [
     ],
   },
   {
-    role: "Vice Chariman",
+    role: "Vice Chairman",
     organization: "IEEE SSIT Student Branch",
     duration: "MAY 2023 – DEC 2023",
     points: [
@@ -122,5 +127,5 @@ export const socialLinks = {
   linkedin: { url: personalInfo.linkedin, icon: <FaLinkedin size={24} /> },
   github: { url: personalInfo.github, icon: <FaGithub size={24} /> },
   email: { url: `mailto:${personalInfo.email}`, icon: <FaEnvelope size={24} /> },
-  // phone: { url: `tel:${personalInfo.phone}`, icon: <FaPhone size={24} /> }, // Optional
+  phone: { url: `tel:${personalInfo.phone}`, icon: <FaPhone size={24} /> },
 };
