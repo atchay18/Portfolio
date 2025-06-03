@@ -1,19 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
-@import './fonts.css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Your custom CSS here */
-module.exports = {
-  plugins: [
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
-}
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+@type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -21,7 +7,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
+      colors: { // Your existing colors
         'primary-bg': '#1a1a2e',
         'secondary-bg': '#16213e',
         'accent-1': '#00f5c3',
@@ -30,14 +16,18 @@ export default {
         'text-secondary': '#a0a0a0',
       },
       fontFamily: {
+        // MODIFICATION: Set JetBrains Mono as the default sans-serif font
         sans: ['"JetBrains Mono"', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
+        // The mono utility will also use JetBrains Mono, which is fine.
+        // You can keep it explicit or rely on sans being JetBrains Mono now.
+        // For clarity, keeping it explicit:
         mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
       },
-      animation: {
+      animation: { // Your existing animations
         'text-focus-in': 'text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both',
         'slide-in-bottom': 'slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
       },
-      keyframes: {
+      keyframes: { // Your existing keyframes
         'text-focus-in': {
           '0%': { filter: 'blur(12px)', opacity: '0' },
           '100%': { filter: 'blur(0px)', opacity: '1' },
@@ -53,4 +43,3 @@ export default {
     // require('tailwind-scrollbar'), // If you added this
   ],
 }
-
