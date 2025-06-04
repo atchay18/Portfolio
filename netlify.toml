@@ -1,2 +1,4 @@
 [build]
+publish = "dist"
+command = "npm install && npm run build"
 idiomatic_version_file_enable_tools = true
